@@ -6,7 +6,7 @@
 ## Checklist
 
 ### When Claude Code Finishes
-1. ✅ Verify it runs (npm run dev, tests pass)
+1. ✅ Verify it runs (npm run dev, tests pass, etc.)
 2. ✅ **STOP the process**
 3. ✅ Check: `git status`
 4. ✅ Add all: `git add .`
@@ -20,11 +20,13 @@
 3. ✅ Start working
 
 ## Why
-Git hook will warn you, but discipline is better.
+Git hook warns you if you forget.
+This document reminds you of the workflow.
 Commits are free. Frustration is expensive.
 
-## Your Setup
-- **Surface Pro (Windows):** PowerShell, Node v24, Claude Code 2.1.42
+## Your Infrastructure
+- **Surface Pro:** PowerShell, Node v24, Claude Code 2.1.42
 - **Ubuntu (Obelix):** bash, Node v20, Claude Code 2.1.38
-- **Git remotes:** GitHub (origin) + Proxmox homelab
-- **Commands work identically on both platforms**
+- **Git strategy:** Dual remotes (GitHub + Proxmox homelab)
+- **Global aliases:** `git pushall`, `git pullall`
+- **Protection:** Pre-push hook warns about untracked files
