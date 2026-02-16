@@ -1,0 +1,22 @@
+# Node modules (when React app is built)
+node_modules/
+dist/
+build/
+
+# Environment files
+.env
+.env.local
+
+# Sensitive prompts (if any contain company data)
+sensitive/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
